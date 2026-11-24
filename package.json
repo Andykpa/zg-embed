@@ -1,0 +1,37 @@
+{
+  "name": "opencode-zg-embed-auth",
+  "version": "1.0.0",
+  "description": "Magpie/OpenCode provider plugin: bridges zvec-grep (zg) hardcoded embedding model names to real Bailian (DashScope) models, so zg can talk to a magpie gateway directly.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./server": "./index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "magpie",
+    "magpie-plugin",
+    "embedding",
+    "dashscope",
+    "bailian",
+    "zvec-grep",
+    "zg"
+  ],
+  "license": "MIT",
+  "magpie": {
+    "name": "百炼 zg Embedding",
+    "summary": {
+      "en": "Bridges zg's hardcoded embedding names to Bailian models inside magpie.",
+      "zh": "在 magpie 内部把 zg 写死的 embedding 模型名桥接到百炼真实模型。"
+    },
+    "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23615fff'/%3E%3Cpath d='M14 42 L26 22 L34 36 L42 26 L50 42' stroke='white' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E",
+    "maxConcurrency": 4
+  }
+}
