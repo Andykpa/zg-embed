@@ -179,7 +179,9 @@ export const ZgBailianEmbed = async (_input, options) => {
             // (The gateway already sends the declared API id; this also catches
             // a host that ever sends zg's bare names instead.)
             if (ZG_MODELS[json.model]) json.model = target.model;
-            const callerNative = !!json.input && typeof json.input === "object";
+            // Native shape is input: {contents|texts: [...]}. An ARRAY input is
+            // OpenAI's batch shape (what zg sends for the text names), not native.
+            const callerNative = !!json.input && typeof json.input === "object" && !Array.isArray(json.input);
 
             if (upstreamNative) {
               const res = await fetch(nativeTarget, {

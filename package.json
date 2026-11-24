@@ -1,6 +1,6 @@
 {
   "name": "opencode-zg-embed-auth",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Magpie/OpenCode provider plugin: routes every embedding name zvec-grep (zg) hardcodes to one configured upstream model (Bailian/DashScope flash by default), with protocol auto-adaptation.",
   "type": "module",
   "main": "./index.mjs",
