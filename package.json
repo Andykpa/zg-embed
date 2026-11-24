@@ -25,6 +25,10 @@
     "zg"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andykpa/zg-embed.git"
+  },
   "magpie": {
     "name": "百炼 zg Embedding",
     "summary": {

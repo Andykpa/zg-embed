@@ -23,7 +23,7 @@ zg 的远程 embedding 模型名是写死的：它只会发送 `qwen3.7-text-emb
 ## 安装
 
 ```sh
-magpie plugin add github:OWNER/zg-embed
+magpie plugin add github:Andykpa/zg-embed
 ```
 
 也可以装本地文件夹：`magpie plugin add ./zg-embed`。首次添加插件时 magpie 会自动下载 Bun。在 OpenCode 里同样可用（OpenCode v1 provider 插件形状）。
@@ -133,7 +133,7 @@ A [magpie](https://usemagpie.ai) / OpenCode provider plugin that lets [zvec-grep
 **Install & sign in.**
 
 ```sh
-magpie plugin add github:OWNER/zg-embed
+magpie plugin add github:Andykpa/zg-embed
 magpie plugin login zg-bailian-embed   # pick public DashScope or a custom workspace URL, then the sk- key
 ```
 
